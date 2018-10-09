@@ -1,0 +1,62 @@
+.furniture-screen {
+  position: relative;
+  height: 500px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .furniture-text {
+    width: 617px;
+    height: 397px;
+    border: 1px solid gray;
+
+    .block-title {
+      color: #010101;
+      font-size: 33px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3.36px;
+    }
+
+    .learn-component {
+      //width: 300px;
+      //height: 60px;
+      font-size: 14px;
+      display: flex;
+      //justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 60px;
+
+      .arrow-right {
+        position: relative;
+        width: 35px;
+        height: 1px;
+        background-color: $primary-color;
+        margin-left: 15px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          right: 0;
+          top: -3px;
+          width: 5px;
+          height: 5px;
+          border: 1px solid transparent;
+          border-top-color: $primary-color;
+          border-right-color: $primary-color;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .furniture-img {
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+  }
+}

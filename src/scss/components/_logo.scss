@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  position: relative;
+
+  .logo-text {
+    color: $secondary-color;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10.8px;
+  }
+
+  .logo-decor {
+    position: absolute;
+    top: 12px;
+    left: 38px;
+    width: 55px;
+    height: 4px;
+    background-color: #bea67c;
+  }
+}
