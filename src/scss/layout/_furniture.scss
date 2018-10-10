@@ -1,17 +1,49 @@
 .furniture-screen {
-  position: relative;
-  height: 500px;
+  padding-top: 80px;
 
   .container {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hidden-title {
+    position: absolute;
+    right: -200px;
+    opacity: 0.3;
+    color: #d0d0d0;
+    font-size: 135px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
   }
 
   .furniture-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     width: 617px;
     height: 397px;
-    border: 1px solid gray;
+    margin-right: 50px;
+
+    .block-number {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      color: #010101;
+      font-size: 33px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.7px;
+    }
+
+    .text-wrapper {
+      width: 350px;
+    }
 
     .block-title {
       color: #010101;
@@ -19,14 +51,25 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 3.36px;
+      margin-bottom: 30px;
+    }
+
+    .block-text {
+      position: relative;
+      margin-bottom: 30px;
+      text-align: justify;
+
+      .rectangle {
+        position: absolute;
+        top: -15px;
+        left: -55px;
+        transform: rotate(90deg);
+      }
     }
 
     .learn-component {
-      //width: 300px;
-      //height: 60px;
       font-size: 14px;
       display: flex;
-      //justify-content: center;
       align-items: center;
       text-transform: uppercase;
       font-weight: 700;

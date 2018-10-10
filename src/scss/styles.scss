@@ -3,7 +3,14 @@
 @import "base/base";
 
 @import "components/logo";
-@import "components/header";
-@import "components/main-screen";
-@import "components/furniture";
-@import "components/footer";
+
+@import "layout/header";
+@import "layout/main-screen";
+@import "layout/furniture";
+@import "layout/rectangle-left";
+@import "layout/decor";
+@import "layout/rectangle-right";
+@import "layout/videos";
+@import "layout/video";
+@import "layout/about";
+@import "layout/footer";

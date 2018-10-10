@@ -1,0 +1,17 @@
+.rectangle-row-right {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1234px;
+
+    .rectangle {
+      margin-right: 20px;
+    }
+  }
+}

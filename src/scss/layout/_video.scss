@@ -1,0 +1,76 @@
+.video-screen {
+  position: relative;
+  width: 100%;
+  height: 916px;
+  background-color: #070707;
+
+  .background-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("../img/background_video_img.png") center center;
+  }
+
+  .play-icon-transparent {
+    position: absolute;
+    right: 100px;
+    top: 45px;
+  }
+
+  .content-rectangle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1560px;
+    height: 750px;
+    border: 1px solid $primary-color;
+  }
+
+  .content-block {
+    width: 500px;
+    margin-left: 380px;
+
+    .video-title {
+      color: $primary-color;
+      font-size: 46px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+
+    .video-description {
+      position: relative;
+      margin-bottom: 30px;
+      text-align: justify;
+      color: $secondary-color;
+      max-width: 400px;
+
+      .rectangle {
+        position: absolute;
+        top: -15px;
+        left: -55px;
+        transform: rotate(90deg);
+      }
+    }
+
+    .learn-btn {
+      width: 300px;
+      height: 60px;
+      border: 2px solid $secondary-color;
+      color: $secondary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+
+      .play-icon {
+        margin-right: 15px;
+      }
+    }
+  }
+}
