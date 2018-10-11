@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
+const forceSsl = require('force-ssl-heroku');
 
 const app = express();
 
+app.use(forceSsl);
 app.use(express.static(__dirname + '/build'));
 
 app.get('/*', function(req,res) {
