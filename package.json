@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "node_modules/.bin/gulp"
+    "gulp": "node_modules/.bin/gulp",
+    "postinstall": "node_modules/.bin/gulp build && node_modules/.bin/http-server build"
   },
   "author": "gg",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
+    "http-server": "^0.11.1",
     "imagemin-pngquant": "^6.0.0"
   }
 }
